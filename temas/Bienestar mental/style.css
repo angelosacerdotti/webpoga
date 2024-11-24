@@ -1,0 +1,316 @@
+* {
+    background-color: #232323;
+    margin: 0px 0;
+    padding: 0px;
+}
+main {
+    flex: 1;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {  /*header*/
+    height: 150px;
+    margin-top: 0px;
+    background-color:  #111;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.menu {  /*Inicio, nosotros, contactos*/
+    list-style-type: none;
+    padding: 5px;
+    font-size: large;
+    display: flex;
+    border-radius: 15px;
+
+}
+
+.menu a {
+    margin: 15px 30px;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.5s; 
+
+}
+.menu a:hover{  /*animacion de menu*/
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+.temas { /*posicion de las imagenes*/
+    margin:  0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.container  img{  /*bordes redondeados, bordes color gris, eliminacion del fondo de las imagenes*/
+    border-radius: 50px;
+    mix-blend-mode: multiply;
+    transition: transform 0.3s, opacity 0.5s;
+    opacity: 1;  
+    margin: 5px ;
+
+} 
+.container img {
+    border: 5px solid #4B0000;
+}
+.container img:hover { /*imagenes animacion*/
+    transition: transform 0.3s, opacity 0.5s;
+    transform:scale(1.1);
+    opacity: 1;
+}
+.poga{  /*titulo POGA*/
+    color: #051f20;
+    background-color: #111;
+    font-size: 50px;
+    display: flex;
+    margin-left: 70px;
+    transition: transform 0.3s, background-color 0.5s; 
+}
+.poga:hover{  /*Animacion del titulo POGA */
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+.logo { /*LOGO del colegio*/
+    background-color: #111;
+    position: absolute;
+    transition: transform 0.4s, background-color 0.5s; 
+}
+
+.logo:hover{  /*animacion del logo del colegio*/
+    transition: transform 0.4s, background-color 0.5s; 
+    transform:  scale(1.8);
+
+}
+
+
+.click {  /*texto que dice "Haz click en los íconos y ve la magia"*/
+    text-align: justify;
+    margin-left: 23%;
+    bottom: 70%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    color: #163832;
+    background-color: #051f20;
+    border-radius: 15px;
+    transition: transform 0.3s, opacity 0.5s;
+}
+.click:hover { /*imagenes animacion*/
+    transition: transform 0.3s, opacity 0.5s;
+    transform:scale(1.1);
+    opacity: 10;
+}
+
+.footer { /* footer, altura color de fondo tamaño posicion */
+    height: 100px;
+    margin-top: 0px;
+    background-color:  #111;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+
+}
+.footer ul{ /* eliminacion de viñetas de la lista*/
+    list-style-type: none;
+}
+.logo1 { /*es logo de facebook*/
+    width: 60px;
+    background-color: #111;
+    padding: 10px 20px;
+    display: block;
+
+}
+.IA1 {
+    padding: 10x;
+    background: none;
+    font-size: 80px;
+    position: absolute;
+    color: gray;
+    left: 80.7px;
+    top: 48.200%;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: transform 0.2s, opacity 0.3s;
+    font-weight: bold;
+}
+
+
+.IA1:hover{
+    transform: scale(1.8);
+    opacity: 100;
+    color: #005F7A;
+
+
+
+}
+.IA1 a {
+    text-decoration: none;
+
+}
+
+
+
+.delitos1 {
+    padding: 10x;
+    background: none;
+    font-size: 80px;
+    position: absolute;
+    color: gray;
+    left: 20.9%;
+    top: 48.200%;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: transform 0.2s, opacity 0.3s;
+    font-weight: bold;
+    
+}
+
+.delitos1:hover{
+    transform: scale(1.8);
+    opacity: 100;
+    color: #1A2B3C;
+    font-weight: bold;
+
+
+
+}
+.delitos1 a {
+    text-decoration: none;
+
+}
+
+
+
+.violencia1 {
+    padding: 10x;
+    background: none;
+    font-size: 80px;
+    position: absolute;
+    color: gray;
+    left: 37.8%;
+    top: 48.200%;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: transform 0.2s, opacity 0.3s;
+    font-weight: bold;
+
+}
+
+.violencia1:hover{
+    transform: scale(1.8);
+    opacity: 100;
+    color: #4B0000;
+}
+.violencia1 a {
+    text-decoration: none;
+
+}
+
+.desigualdad1 {
+    padding: 10x;
+    background: none;
+    font-size: 80px;
+    position: absolute;
+    color: gray;
+    left: 53.5%;
+    top: 48.200%;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: transform 0.2s, opacity 0.3s;
+    font-weight: bold;
+
+}
+
+.desigualdad1:hover{
+    transform: scale(1.8);
+    opacity: 100;
+    color: #2F4F2F;
+}
+.desigualdad1 a {
+    text-decoration: none;
+
+}
+
+.medicina1 {
+    padding: 10x;
+    background: none;
+    font-size: 80px;
+    position: absolute;
+    color: gray;
+    left: 70%;
+    top: 48.200%;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: transform 0.2s, opacity 0.3s;
+    font-weight: bold;
+
+}
+
+.medicina1:hover{
+    transform: scale(1.8);
+    opacity: 100;
+    color: #003E3E;
+}
+.medicina1 a {
+    text-decoration: none;
+
+}
+
+.mente1 {
+    padding: 10x;
+    background: none;
+    font-size: 80px;
+    position: absolute;
+    color: gray;
+    left: 86.35%;
+    top: 49%;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: transform 0.2s, opacity 0.3s;
+    font-weight: bold;
+}
+
+.mente1:hover{
+    
+    transform: scale(1.8);
+    opacity: 100;
+    color: #4C1C3D;
+}
+.mente1 a {
+    text-decoration: none;
+
+}
+
+

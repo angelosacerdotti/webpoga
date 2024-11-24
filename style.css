@@ -1,0 +1,248 @@
+* {
+    background-color: #2A2A2A;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+.encabezado {  /*header*/
+    height: 200px;
+    margin-top: 0px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid grey;
+}
+
+.menu {  /*Inicio, nosotros, contactos*/
+    list-style-type: none;
+    padding: 5px;
+    font-size: large;
+    display: flex;
+    border-radius: 15px;
+}
+
+.menu a {
+    margin: 15px 30px;
+    border-radius: 10px;
+    color:rgb(190, 190, 190);
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.5s;
+}
+
+.menu a:hover {  /*animacion de menu*/
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+.temas { /*posicion de las imagenes*/
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 300px;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container img {  /*bordes redondeados, bordes color gris, eliminacion del fondo de las imagenes*/
+    border-radius: 50px;
+
+    transition: transform 0.3s, opacity 0.5s;
+    margin: 10px;
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+
+.container img:hover { /*imagenes animacion*/
+    transition: transform 0.3s, opacity 0.5s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.poga {  /*titulo POGA*/
+    color: rgb(190, 190, 190);
+    background-color: black;
+    font-size: 50px;
+    margin-left: 70px;
+    transition: transform 0.3s, background-color 0.5s;
+
+}
+
+.poga:hover {  /*Animacion del titulo POGA */
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+.logo { /*LOGO del colegio*/
+    top: 23px;
+    background-color: black;
+    position: absolute;
+    transition: transform 0.4s, background-color 0.5s;
+}
+
+.logo:hover {  /*animacion del logo del colegio*/
+    transition: transform 0.4s, background-color 0.5s;
+    transform: scale(1.8);
+}
+
+.click {  /*texto que dice "Haz click en los íconos y ve la magia"*/
+    text-align: center;
+    margin-left: 23%;
+    bottom: 70%;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    color: rgb(110, 105, 105);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: transform 0.3s, opacity 0.5s;
+}
+
+.click:hover { /*imagenes animacion*/
+    transition: transform 0.3s, opacity 0.5s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.footer { /* footer, altura color de fondo tamaño posicion */
+    background-color: black;
+    height: 150px;
+    display: flex;
+    border: 4px solid whitesmoke;
+}
+
+.logo1 {
+    width: 80px;
+    margin: auto;
+    padding: 0; 
+    display: block; 
+    position: relative;
+    background-color: black;
+    margin-top: 10px;
+
+}
+
+
+/* --- Media Queries --- */
+
+/* Para pantallas más pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .encabezado {
+        list-style-type: none;
+        height: 130px;
+
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 12px;
+    }
+    .logo:hover {  /*animacion del logo del colegio*/
+        transition: transform 0.4s, background-color 0.5s;
+        transform: scale(1.3);
+        border-radius: 100%;
+    }
+    
+    .menu {
+        font-size: 15px;
+        display: flex;
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+
+    .temas {
+        margin-top: 50px;
+        justify-content: center;
+        bottom: 100%;
+    }
+
+    .container {
+        margin-top: 50%;
+
+    }
+
+    .container img {
+        width: 110px; 
+        height: 110px;  
+
+    }
+
+    .poga {
+        font-size: 40px;
+        margin-left: 80px;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .click {
+        margin-left: 10%;
+        bottom: 65%;
+        margin-top: 10px;
+        width: 80%; /* Se ajusta el texto para que no se salga de la pantalla */
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+    }
+
+    .logo1 {
+        width: 40px;
+        position: absolute;
+        left: 20px;
+    }
+
+}
+
+/* Para pantallas más grandes (tabletas o escritorios) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .encabezado {
+        padding: 0 40px;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .temas {
+        margin-top: 150px;
+    }
+
+    .container img {
+        width: 80%;
+    }
+
+    .click {
+        margin-left: 15%;
+        bottom: 70%;
+    }
+
+}
